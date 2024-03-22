@@ -1,0 +1,56 @@
+.container {
+	border-radius: 0.5rem;
+	box-shadow: 0px 4px 8px rgba(73, 92, 136, 0.15);
+
+	&-baseData {
+		border-radius: 0.5rem;
+		box-shadow: 0px 4px 8px rgba(73, 92, 136, 0.15);
+
+		&-spans {
+			padding-left: 1rem;
+			color: rgba(0, 0, 0, 0.4);
+		}
+	}
+
+	&-stats {
+		border-radius: 0.5rem;
+		box-shadow: 0px 4px 8px rgba(73, 92, 136, 0.15);
+
+		&-slider {
+			@media (max-width: 599px) {
+				/* Stílusok az xs (extra small) felbontáshoz */
+				width: 60px !important;
+			}
+
+			/* Media query az sm (small) felbontáshoz */
+			@media (min-width: 600px) and (max-width: 899px) {
+				/* Stílusok az sm (small) felbontáshoz */
+				width: 120px !important;
+			}
+
+			/* Media query az md (medium) felbontáshoz */
+			@media (min-width: 900px) and (max-width: 1199px) {
+				/* Stílusok az md (medium) felbontáshoz */
+				width: 150px !important;
+			}
+
+			/* Media query az lg (large) felbontáshoz */
+			@media (min-width: 1200px) {
+				/* Stílusok az lg (large) felbontáshoz */
+				width: 120px !important;
+			}
+		}
+		&-spans {
+			padding-left: 1rem;
+			color: #ed6c02;
+		}
+	}
+}
+
+.css-lbpym0-MuiSlider-root.Mui-disabled {
+	color: #0288d1 !important;
+}
+
+.css-2tk0uu-MuiSlider-valueLabel.MuiSlider-valueLabelOpen {
+	background-color: #ed6c02 !important;
+}
